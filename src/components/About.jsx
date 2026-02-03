@@ -18,7 +18,7 @@ export default function About() {
 
         <div className="about-image">
           <img
-            src="https://images.unsplash.com/photo-1588776814546-1b19bfae5b94"
+            src="https://lh3.googleusercontent.com/p/AF1QipOSjywzAKRfHftz9m3H9Bn0Pzc9LhRk1XFXgIWN=s1360-w1360-h1020-rw"
             alt="Dental Clinic Interior"
           />
         </div>
