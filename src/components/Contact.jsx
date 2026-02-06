@@ -19,7 +19,7 @@ export default function Contact() {
         <div className="contact-map">
           <iframe
             title="Chougule Dental Clinic Location"
-            src="https://www.google.com/maps?q=Ashta%20Sangli%20Dental%20Clinic&output=embed"
+            src="https://maps.app.goo.gl/4bQy6cNTwMo6y9Ar5&output=embed"
             loading="lazy"
           ></iframe>
         </div>
