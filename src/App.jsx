@@ -6,6 +6,7 @@ import Doctors from "./components/Doctors"
 import Testimonials from "./components/Testimonials"
 import Contact from "./components/Contact"
 import FloatingButtons from "./components/FloatingButtons"
+import Navbar from "./components/Navbar"
 import Footer from "./components/Footer"
 
 export default function App() {
@@ -19,6 +20,7 @@ export default function App() {
       <Testimonials />
       <Contact />
       <FloatingButtons />
+        <Navbar />
       <Footer />
     </>
   )
