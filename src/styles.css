@@ -406,10 +406,10 @@
 .appointment-form button:hover {
   background: #1565c0;
 }
-/* GOOGLE REVIEWS */
+/* GOOGLE LIVE REVIEWS */
 .google-reviews {
   padding: 80px 20px;
-  background: #f9fbfd;
+  background: #ffffff;
   text-align: center;
 }
 
@@ -419,31 +419,19 @@
   margin-bottom: 30px;
 }
 
-.google-review-card {
-  max-width: 600px;
+.google-embed {
+  max-width: 1000px;
   margin: auto;
-  background: white;
-  padding: 30px;
+}
+
+.google-embed iframe {
+  width: 100%;
+  height: 450px;
+  border: none;
   border-radius: 16px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-  margin-bottom: 25px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
 }
 
-.rating {
-  font-size: 22px;
-  margin-bottom: 10px;
-}
-
-.review-btn {
-  display: inline-block;
-  margin-top: 10px;
-  background: #1e88e5;
-  color: white;
-  padding: 12px 26px;
-  border-radius: 30px;
-  text-decoration: none;
-  font-weight: 600;
-}
 
 .whatsapp-icon {
   width: 28px;
