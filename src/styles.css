@@ -363,6 +363,51 @@
   font-weight: 500;
 }
 
+/* APPOINTMENT FORM */
+.appointment {
+  padding: 80px 20px;
+  background: #ffffff;
+  text-align: center;
+}
+
+.appointment h2 {
+  font-size: 32px;
+  color: #1e88e5;
+  margin-bottom: 30px;
+}
+
+.appointment-form {
+  max-width: 500px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.appointment-form input,
+.appointment-form textarea {
+  padding: 14px;
+  font-size: 16px;
+  border-radius: 10px;
+  border: 1px solid #d1d5db;
+}
+
+.appointment-form button {
+  background: #1e88e5;
+  color: white;
+  padding: 14px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+}
+
+.appointment-form button:hover {
+  background: #1565c0;
+}
+
+
 
 
 
