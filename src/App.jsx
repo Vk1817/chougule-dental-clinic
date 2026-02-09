@@ -4,6 +4,7 @@ import Services from "./components/Services"
 import WhyChooseUs from "./components/WhyChooseUs"
 import Doctors from "./components/Doctors"
 import Testimonials from "./components/Testimonials"
+import GoogleReviews from "./components/GoogleReviews"
 import Contact from "./components/Contact"
 import FloatingButtons from "./components/FloatingButtons"
 import Navbar from "./components/Navbar"
@@ -20,6 +21,7 @@ export default function App() {
   <WhyChooseUs />
   <Doctors />
   <Testimonials />
+   <GoogleReviews />
   <Appointment />
   <Contact />
   <FloatingButtons />
