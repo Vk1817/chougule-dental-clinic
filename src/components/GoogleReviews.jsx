@@ -1,16 +1,64 @@
 export default function GoogleReviews() {
   return (
-    <section className="google-reviews">
-      <h2>Google Reviews</h2>
+    <section className="google-rating">
+      <h2>⭐ 5.0 Rating on Google</h2>
+      <p className="rating-subtitle">
+        Trusted by patients in Ashta & nearby areas
+      </p>
 
-      <div className="google-embed">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1228.974976726786!2d74.4040434727297!3d16.94585209846641!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc10f374b9a4d81%3A0xb4788c8d762fca57!2sChougule%20Multispeciality%20Dental%20Clinic%2C%20Ashta.%20Orthodontic%20and%20Root%20canal%20Centre!5e1!3m2!1sen!2sin!4v1770629616091!5m2!1sen!2sin"
-          loading="lazy"
-          referrerPolicy="no-referrer-when-downgrade"
-          title="Chougule Dental Clinic Google Reviews"
-        ></iframe>
+      <div className="rating-cards">
+
+        <div className="rating-card">
+          <p className="stars">⭐⭐⭐⭐⭐</p>
+          <p>
+            “Dr. Prangha Chougule and Dr. Rohit Chougule both are extremely
+            professional, knowledgeable and friendly. They make patients very
+            comfortable. Staff is polite, professional and follow-ups are done
+            on time. I highly recommend Chougule Multispeciality Dental Clinic,
+            Ashta.”
+          </p>
+          <strong>– Santosh Kumbhar</strong>
+        </div>
+
+        <div className="rating-card">
+          <p className="stars">⭐⭐⭐⭐⭐</p>
+          <p>
+            “Dr. treatment is very good. My experience for root canal and dental
+            cap treatment was excellent. Talking and treatment experience was
+            very nice. I am fully satisfied. Thank you so much sir.”
+          </p>
+          <strong>– Abhishek Kole</strong>
+        </div>
+
+        <div className="rating-card">
+          <p className="stars">⭐⭐⭐⭐⭐</p>
+          <p>
+            “Doctors advise is very proper and they explain everything very
+            clearly. Madam is a very good doctor. Highly recommended.”
+          </p>
+          <strong>– Sonali Salokhe</strong>
+        </div>
+
+        <div className="rating-card">
+          <p className="stars">⭐⭐⭐⭐⭐</p>
+          <p>
+            “Very good treatment. Dr. Rohit and Dr. Prangha explained everything
+            very clearly. Hospital staff is kind and clinic is very clean and
+            beautiful.”
+          </p>
+          <strong>– Ashwini Lavate</strong>
+        </div>
+
       </div>
+
+      <a
+        href="https://www.google.com/maps/search/?api=1&query=Chougule+Multispeciality+Dental+Clinic+Ashta"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="google-review-btn"
+      >
+        View all reviews on Google
+      </a>
     </section>
   )
 }
