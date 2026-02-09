@@ -7,21 +7,24 @@ import Testimonials from "./components/Testimonials"
 import Contact from "./components/Contact"
 import FloatingButtons from "./components/FloatingButtons"
 import Navbar from "./components/Navbar"
+import Appointment from "./components/Appointment"
 import Footer from "./components/Footer"
 
 export default function App() {
   return (
-    <>
-      <Hero />
-      <About />
-      <Services />
-      <WhyChooseUs />
-      <Doctors />
-      <Testimonials />
-      <Contact />
-      <FloatingButtons />
-        <Navbar />
-      <Footer />
-    </>
+   <>
+  <Navbar />
+  <Hero />
+  <About />
+  <Services />
+  <WhyChooseUs />
+  <Doctors />
+  <Testimonials />
+  <Appointment />
+  <Contact />
+  <FloatingButtons />
+  <Footer />
+</>
+
   )
 }
