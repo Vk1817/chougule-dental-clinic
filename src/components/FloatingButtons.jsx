@@ -18,7 +18,11 @@ export default function FloatingButtons() {
         className="floating-btn whatsapp-btn"
         aria-label="WhatsApp Chougule Dental Clinic"
       >
-        💬
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
+          alt="WhatsApp"
+          className="whatsapp-icon"
+        />
       </a>
     </>
   )
