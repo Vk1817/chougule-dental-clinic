@@ -1,3 +1,4 @@
+import FloatingButtons from "./components/FloatingButtons"
 import Hero from "./components/Hero"
 import About from "./components/About"
 import Services from "./components/Services"
@@ -6,12 +7,17 @@ import Contact from "./components/Contact"
 
 export default function App() {
   return (
-    <>
-      <Hero />
-      <About />
-      <Services />
-      <Doctors />
-      <Contact />
-    </>
+   <>
+  <Hero />
+  <About />
+  <Services />
+  <WhyChooseUs />
+  <Doctors />
+  <Testimonials />
+  <Contact />
+  <FloatingButtons />
+  <Footer />
+</>
+
   )
 }
