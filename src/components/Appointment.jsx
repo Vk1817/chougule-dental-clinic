@@ -4,7 +4,6 @@ import emailjs from "@emailjs/browser"
 export default function Appointment() {
   const [name, setName] = useState("")
   const [phone, setPhone] = useState("")
-  const [email, setEmail] = useState("")
   const [message, setMessage] = useState("")
   const [status, setStatus] = useState("")
 
@@ -14,37 +13,34 @@ export default function Appointment() {
     const templateParams = {
       name: name,
       phone: phone,
-      email: email,
       message: message,
     }
 
     emailjs
       .send(
-        "service_qrumx55",        // Service ID
-        "template_908dksu",       // Template ID
+        "service_qrumx55",     // Your Service ID
+        "template_908dksu",    // Your Template ID
         templateParams,
-        "2mDLcruOZfH0K_PBA"        // Public Key
+        "2mDLcruOZfH0K_PBA"     // Your Public Key
       )
       .then(
         () => {
-          setStatus("✅ Appointment request sent successfully!")
+          setStatus("Appointment request sent successfully ✅")
           setName("")
           setPhone("")
-          setEmail("")
           setMessage("")
         },
         () => {
-          setStatus("❌ Failed to send appointment. Please try again.")
+          setStatus("Something went wrong ❌ Please try again.")
         }
       )
   }
 
   return (
-    <section className="appointment" id="appointment">
+    <section className="appointment">
       <h2>Book an Appointment</h2>
 
       <form onSubmit={handleSubmit} className="appointment-form">
-
         <input
           type="text"
           placeholder="Your Name"
@@ -61,19 +57,10 @@ export default function Appointment() {
           required
         />
 
-        <input
-          type="email"
-          placeholder="Your Email"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-          required
-        />
-
         <textarea
           placeholder="Your Message"
           value={message}
           onChange={(e) => setMessage(e.target.value)}
-          required
         ></textarea>
 
         <button type="submit">Book Appointment</button>
