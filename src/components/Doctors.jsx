@@ -1,6 +1,6 @@
 export default function Doctors() {
   return (
-    <section className="doctors">
+    <section className="doctors" id="doctors">
       <h2>Our Doctors</h2>
 
       <div className="doctors-grid">
