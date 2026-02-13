@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 /* HERO SECTION */
 .hero {
   background: linear-gradient(120deg, #1e88e5, #26a69a);
@@ -469,6 +473,49 @@
   height: 28px;
 }
 
+/* MOBILE RESPONSIVE FIX */
+@media (max-width: 768px) {
+
+  .hero h1 {
+    font-size: 30px;
+  }
+
+  .hero {
+    padding: 70px 20px;
+  }
+
+  .about-container,
+  .contact-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-image img {
+    max-width: 90%;
+  }
+
+  .navbar ul {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .doctors-grid,
+  .services-grid,
+  .why-grid,
+  .review-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .floating-btn {
+    right: 15px;
+  }
+
+}
 
 
 
