@@ -2,30 +2,38 @@ html {
   scroll-behavior: smooth;
 }
 
-/* HERO SECTION WITH BACKGROUND IMAGE */
+/* ============================= */
+/* HERO SECTION WITH IMAGE */
+/* ============================= */
+
 .hero {
   position: relative;
-  background: url("/assets/clinic.jpg") center/cover no-repeat;
-  height: 90vh;
+  width: 100%;
+  min-height: 100vh;
+  background: url("/assets/clinic.jpg") center center / cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
 }
 
-/* Dark overlay for readability */
+/* Overlay for gradient + readability */
 .hero-overlay {
+  position: absolute;
+  inset: 0;
   background: linear-gradient(
     rgba(30, 136, 229, 0.75),
     rgba(38, 166, 154, 0.75)
   );
-  width: 100%;
-  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
+/* Content */
 .hero-content {
+  position: relative;
+  z-index: 2;
   text-align: center;
   color: white;
   padding: 20px;
@@ -41,8 +49,10 @@ html {
 .hero p {
   font-size: 22px;
   margin-bottom: 35px;
+  opacity: 0.95;
 }
 
+/* Buttons */
 .hero-buttons {
   display: flex;
   justify-content: center;
@@ -55,7 +65,7 @@ html {
   border-radius: 40px;
   font-weight: 600;
   text-decoration: none;
-  transition: 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .btn.primary {
@@ -70,20 +80,28 @@ html {
 
 .btn:hover {
   transform: scale(1.05);
+  opacity: 0.9;
 }
 
-/* Mobile Responsive */
+/* ============================= */
+/* MOBILE RESPONSIVE */
+/* ============================= */
+
 @media (max-width: 768px) {
+  .hero {
+    min-height: 85vh;
+  }
+
   .hero h1 {
-    font-size: 32px;
+    font-size: 30px;
   }
 
   .hero p {
     font-size: 16px;
   }
 
-  .hero {
-    height: 80vh;
+  .hero-buttons {
+    flex-direction: column;
   }
 }
 
